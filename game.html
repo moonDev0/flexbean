@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A game for learning CSS flexbox</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans|Fredoka+One|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="head">
+        <h1 class="title" onclick="home()">Flexbox Bean</h1>
+      </div>
+      <div id="level-counter">
+        <span class="arrow left">
+          <span class="triangle"></span>
+        </span>
+        <span id="level-indicator">
+          <span id="labelLevel" class="translate">Level</span>
+          <span class="current">1</span>
+          <span id="labelOf" class="translate">of</span>
+          <span class="total">1</span>
+          <span class="caret">▾</span>
+        </span>
+        <span class="arrow right">
+          <span class="triangle"></span>
+        </span>
+        <div id="levelsWrapper" class="tooltip">
+          <div id="levels"></div>
+          <div id="labelReset" class="translate">Rese</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="view">
+      <div id="board">
+        <div id="scene">
+        </div>
+        <div id="background">
+        </div>
+      </div>
+    </section>
+   
+    <div class="main">
+
+    <section id="sidebar">
+      <p id="instructions"></p>
+      <div id="editor">
+        <div id="css">
+          <div class="line-numbers">1 <hr>2<hr>3<hr>4<hr>5</div>
+          <pre id="before"></pre>
+          <textarea id="code" autofocus autocapitalize="none"></textarea>
+          <pre id="after"></pre>
+        </div>
+       
+      </div>
+      <div class="next-btn">
+        <div class="foot">want to learn more about CSS? <span onclick="w3school()">Read this!</span> </div>
+        <button id="next" class="translate">Next</button>
+      </div>
+     
+    
+        
+     </div>
+    </section>
+    
+    </div>
+    <script src="js/landing.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/docs.js"></script>
+    <script src="js/messages.js"></script>
+    <script src="js/game.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+      m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    </script>
+    
+
+  
+  </body>
+</html>
