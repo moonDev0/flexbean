@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;   
+}
+header{
+    height: 8vh;
+    color: black;
+    display: flex;
+    margin: 0px 50px 0px 20px ;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    height: 92vh;
+}
+.learn span{
+    color: maroon;
+}
+#arrow-back{
+    padding: 5px;
+    background-color:#CDD0C8;
+    border-radius: 50px;
+    display: flex;
+    margin-right: 15px;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.down{
+    display: none;
+}
+#head{
+    font-weight: bold;
+    font-size: 20px ;
+}
+h4{
+    padding-bottom: 10px;
+}
+.box img{
+    width: 60px;
+    
+}
+#df{
+    font-size: 50px;
+}
+.flex{
+    padding: 10px;
+    display: flex;
+    background-color: #CDD0C8;
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+}
+button{
+    font-size: 12px;
+    display: block;
+    margin: 5px;
+    margin-bottom: 15px;
+    background-color: #CDD0C8;
+    border: 0;
+    border-radius: 30px;
+    color: black;
+    transition: all 0.5s;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;   
+    
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:900px) {
+    .box img{
+        width: 70%;
+    }
+    .buttons{
+        flex-wrap: wrap;
+    }
+
+    .flex{
+        height: 50vh;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    header{
+        justify-content: center;
+        background-color: #CDD0C8;
+        width: 100vw;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    .container{
+        margin: 0px 20px 0px 20px;
+        height: 80vh;
+    }
+    .box img{
+        width: 40%;
+    }
+
+    .flex{
+        height: 50%;
+        
+    }
+    h4{
+        font-size: 11px;
+        padding: 10px 0px 0px 0px;
+        
+    }
+    .top{
+        display: none;
+    }
+    #head{
+        font-size: 18px;
+    }
+    #arrow-back{
+        display: none;
+    }
+    button{
+
+        font-size: 10px;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        margin-left: 10px;
+
+    }
+    .buttons{
+         margin-top: 0px;
+        width: 100%;
+    }
+    .down, footer{
+        margin-top: 8px;
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+    .btn-last{
+        opacity: 0%;
+    }
+    .first{
+        display: flex;
+        justify-content: center;
+    }
+    .second{
+        display: none;
+    }
+}
+
+@media screen and (max-width:370px) {
+    button{
+        font-size: 10px;
+        padding: 4px 8px 4px 8px;
+    }
+    
+   
+    
+}

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display&display=swap');
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #CDD0C8;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background: #DFE0DB;
+    align-items: center;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+header span{
+    color: maroon;
+    font-size: 18px;
+    cursor: pointer;
+}
+.logo{
+    cursor: pointer;
+}
+
+.main-left img{
+    width: 400px;
+    height: 550px;
+}
+
+main{
+    display: flex;
+    height: 87vh;
+}
+.main-left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 78vh;
+    margin-top: 30px;
+    width:50vw;
+    padding-right: 100px;
+   
+}
+.box1{
+   
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: maroon;
+
+
+}
+
+.box2{
+    font-family: montserrat;
+    width: 450px;
+    line-height: 24px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.box3{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+#button1, #button2{
+    background-color: maroon;
+    color: white;
+    width: 150px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#button2{
+    color:maroon;
+    background-color:#CDD0C8;   
+    border: 1px solid maroon;
+
+}
+.main-right{
+    padding-top: 50px;
+    width: 50vw;
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#button1, #button2{
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 80px;
+}
+#button1 img{
+    padding-top: 5px;
+    height: 30px;
+}
+.bean{
+    transition: all 3s;
+    
+}
+
+.bean:hover{
+    transform: rotate(-10deg);
+}
+.buttom{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .top{
+        display: none;
+    }
+    header{
+        height: 70px;
+    }
+    .buttom{
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .buttom span{
+        color: maroon;
+        cursor: pointer;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+    }
+    
+    .main-right{
+        width: 100%;
+        padding: 0px;
+        align-items: unset;
+        height: 43vh;
+        justify-content: center;
+    }
+    .box{
+        width: 100vw;
+        margin: auto;
+    }
+    
+    .box1, .box2, .box3{
+        width: unset;
+        margin-left: 20px;
+        margin-right: 20px ;
+        margin: 20px;
+    }
+    .box1{
+        
+        font-size: 30px;
+        line-height: 38.2px;
+    }
+    .main-left{
+        height: 140px;
+    }
+    .main-left img{
+        width: 150px;
+        height: 170px;
+        
+    }
+    .box2{
+        height: 50px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .box3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    
+    }
+    
+    h2{
+        font-size: 16px;
+    }
+    #button1 img{
+        height: 25px;
+        
+    }
+    #button1, #button2{
+        font-size: 12px;
+        height: 50px;
+        margin-top: 20px;
+    }
+    .container{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #button1, #button2{
+        width: 100%;
+    }
+
+    .buttom{
+        margin-top:150px;
+    }
+    .main-left{
+        display: none;
+    }
+    footer{
+        width: 100%;
+    }
+    
+}
